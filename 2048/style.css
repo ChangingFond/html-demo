@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+header h1 {
+  font-family: Arial;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+header a {
+  background-color: #8D7A65;
+  color: #FFFFFF;
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+header a:hover {
+  background-color: #9f8b77;
+}
+header p {
+  font-family: Arial;
+  font-size: 25px;
+  margin: 5px auto;
+}
+.container {
+  height: 460px;
+  width: 460px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #BAAD9F;
+  border-radius: 20px;
+  position: relative;
+}
+.container #cell_0_0 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: #CCC0B3;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.container #cell_0_1 {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  height: 100px;
+  width: 100px;
+  background-color: #CCC0B3;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.container #cell_0_2 {
+  position: absolute;
+  top: 20px;
+  left: 260px;
+  height: 100px;
+  width: 100px;
+  background-color: #CCC0B3;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.container #cell_0_3 {
+  position: absolute;
+  top: 20px;
+  left: 380px;
+  height: 100px;
+  width: 100px;
+  background-color: #CCC0B3;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.container .cell span {
+  border-radius: 6px;
+  display: block;
+  font-family: Arial;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+}
