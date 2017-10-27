@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, "微软雅黑";
+  font-size: 12px;
+  color: #534616;
+  background: url(../images/img01.jpg) repeat-x left top;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+#wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 168px;
+}
+.header .logo {
+  float: left;
+  margin-top: 36px;
+  font-size: 30px;
+}
+.header .logo a {
+  color: #534616;
+}
+.header .logo span {
+  font-size: 16px;
+  color: #ffffff;
+  font-style: italic;
+}
+.header .search {
+  margin-top: 36px;
+  float: right;
+}
+.header .search input {
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  width: 150px;
+  height: 20px;
+}
+.header .search button {
+  border-radius: 2px;
+  width: 35px;
+  height: 25px;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  float: left;
+  padding-top: 60px;
+  margin-bottom: -60px;
+}
+.nav ul li {
+  float: left;
+  border-right: 1px solid white;
+}
+.nav ul li.no-boder{
+  border: none;
+}
+.nav ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5px 45px;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+.clear {
+  clear: both;
+}
+.main {
+  width: 100%;
+  height: 600px;
+  margin-top: 20px;
+}
+.left {
+  width: 30%;
+  height: 100%;
+  background-color: purple;
+  float: left;
+}
+.right {
+  width: 67%;
+  height: 100%;
+  background-color: green;
+  float: right;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #000000;
+  margin-top: 20px;
+}
