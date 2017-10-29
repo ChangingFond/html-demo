@@ -1,0 +1,126 @@
+/* HTML5元素默认在IE低版本中显示为内联元素 */
+article, aside, dialog, footer, header, section, footer, nav, figure, main {
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  background: #ffffff;
+  border-top: 8px solid #006f47;
+  color: #333333;
+  font: 14px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+.clear {
+  clear: both;
+}
+.wrap {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.top-header {
+  margin: 10px 0;
+}
+.logo {
+  float: left;
+  margin-left: 20px;
+}
+.menu {
+  float: left;
+  margin-left: 30px;
+  margin-top: 83px;
+}
+.menu ul li {
+  display: inline-block;
+  background-color: #efe5d0;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.menu ul li a:link, .menu ul li a:visited {
+  color: #006f47;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu ul li.selected {
+  background-color: #efe5df;
+}
+.left-aside {
+  float: left;
+  width: 350px;
+}
+.left-aside section {
+  background: #efe5d0 url(images/background.gif) top left;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.left-aside h3 {
+  color: #006f47;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.news p {
+  line-height: 1.8em;
+  text-indent: 2em;
+}
+.drinks figure {
+  float: left;
+}
+.drinks .figure-right {
+  margin-left: 20px;
+}
+.drinks figure img {
+  width: 141px;
+  height: 158px;
+  border: 2px solid #ffffff;
+}
+
+main {
+  background: #efe5d0 url(images/background.gif) top left;
+  margin-left: 360px;
+  padding: 20px;
+}
+main article {
+  border-bottom: 1px dashed #c8b99c;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+main .last-article {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+main article h3 {
+  color: #006f47;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+main article time {
+  color: #675c47;
+}
+
+main article p {
+  line-height: 1.5em;
+  text-indent: 30px;
+  margin: 10px 0;
+}
+
+.page-footer {
+  clear: both;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*margin-top: 10px;*/
+  background-color: #eeeeee;
+  text-align: center;
+  font-size: 90%;
+}
