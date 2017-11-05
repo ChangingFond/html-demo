@@ -16,7 +16,7 @@ ul {
   list-style-type: none;
 }
 #wrapper {
-  width: 1180px;
+  width: 960px;
   margin: 0 auto;
 }
 .header {
@@ -30,7 +30,7 @@ ul {
 }
 .header .logo span {
   font-size: 16px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-style: italic;
 }
 .header .search {
@@ -38,7 +38,7 @@ ul {
   float: right;
 }
 .header .search input {
-  border: 1px solid #eeeeee;
+  border: 1px solid #EEEEEE;
   border-radius: 4px;
   width: 150px;
   height: 20px;
@@ -59,12 +59,12 @@ ul {
   float: left;
   border-right: 1px solid white;
 }
-.nav ul li.no-boder{
+.nav ul li.no-boder {
   border: none;
 }
 .nav ul li a {
   font-size: 16px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding: 5px 45px;
 }
 .nav ul li a:hover {
@@ -75,7 +75,7 @@ ul {
 }
 .main {
   width: 100%;
-  height: 600px;
+  height: auto;
   margin-top: 20px;
 }
 .left {
@@ -92,10 +92,10 @@ ul {
   background-color: #D6E6CC;
 }
 .left .content {
-  padding: 12px 24px;
+  padding: 12px 24px 12px 24px;
   line-height: 20px;
   color: #787878;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   border: 1px solid #D6E6CC;
   background-color: #F9F0CF;
 }
@@ -103,15 +103,38 @@ ul {
   line-height: 36px;
   border-bottom: 1px dashed #D1D1D1;
 }
+.content li a:hover {
+  text-decoration: underline;
+}
+
 .right {
   width: 72%;
   height: 100%;
-  background-color: green;
   float: right;
+}
+.right .title {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-indent: 2em;
+  line-height: 50px;
+  background-color: #D6E6CC;
+}
+.right .content {
+  padding: 12px 24px;
+  line-height: 24px;
+  color: #534616;
+  text-indent: 2em;
+  margin-bottom: 20px;
+  border: 1px solid #D6E6CC;
+  background-color: #F4FAF0;
 }
 .footer {
   width: 100%;
-  height: 50px;
-  background: #000000;
+  line-height: 64px;
+  background: url(../images/img03.jpg) repeat-x;
   margin-top: 20px;
+  height: 64px;
+  float: left;
+  text-align: center;
 }
