@@ -1,3 +1,27 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+}
+
+html {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #FFF;
+    color: #434343;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    padding: 0
+}
+
 .demo {
     /* for IE10+ touch devices */
     touch-action:none;
@@ -10,26 +34,22 @@
   max-height: 750px;
 }
 .flowchart-demo .window {
-    border: 1px solid #346789;
-    box-shadow: 2px 2px 19px #aaa;
-    -o-box-shadow: 2px 2px 19px #aaa;
-    -webkit-box-shadow: 2px 2px 19px #aaa;
-    -moz-box-shadow: 2px 2px 19px #aaa;
+    border: 1px solid #eee;
+    box-shadow: 2px 2px 2px #aaa;
+    -o-box-shadow: 2px 2px 2px #aaa;
+    -webkit-box-shadow: 2px 2px 2px #aaa;
+    -moz-box-shadow: 2px 2px 2px #aaa;
     -moz-border-radius: 0.5em;
     border-radius: 0.5em;
     opacity: 0.8;
-    width: 40px;
-    height: 40px;
-    line-height: 80px;
     cursor: pointer;
     text-align: center;
     z-index: 20;
     position: absolute;
     background-color: #eeeeef;
     color: black;
-    font-family: helvetica, sans-serif;
     padding: 0.5em;
-    font-size: 0.9em;
+    font-size: 1em;
     -webkit-transition: -webkit-box-shadow 0.15s ease-in;
     -moz-transition: -moz-box-shadow 0.15s ease-in;
     -o-transition: -o-box-shadow 0.15s ease-in;
@@ -37,39 +57,171 @@
 }
 
 .flowchart-demo .window:hover {
-    box-shadow: 2px 2px 19px #444;
-    -o-box-shadow: 2px 2px 19px #444;
-    -webkit-box-shadow: 2px 2px 19px #444;
-    -moz-box-shadow: 2px 2px 19px #444;
-    opacity: 0.6;
+    box-shadow: 2px 2px 5px #444;
+    -o-box-shadow: 2px 2px 5px #444;
+    -webkit-box-shadow: 2px 2px 5px #444;
+    -moz-box-shadow: 2px 2px 5px #444;
+    /*opacity: 0.9;*/
+    border: 2px solid #FF0000;
 }
 
 .flowchart-demo .active {
-    border: 1px dotted green;
+    border: 1px dotted #000;
 }
 
 .flowchart-demo .hover {
     border: 1px dotted red;
 }
 
-#flowchartWindow1 {
-    top: 34em;
-    left: 5em;
+.flowchart-demo .badge {
+  border-radius: 10px;
+  color: #000;
+  display: inline-block;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  top: -5px;
+  left: -10px;
 }
 
-#flowchartWindow2 {
-    top: 7em;
-    left: 36em;
+#node-input {
+  left: 380px;
+  margin-top: 40px;
+  background-color: #E7E4E4;
+  width: 100px;
 }
 
-#flowchartWindow3 {
-    top: 27em;
-    left: 48em;
+#node-init {
+  left: 380px;
+  margin-top: 100px;
+  background-color: #E7E4E4;
+  width: 100px;
 }
 
-#flowchartWindow4 {
-    top: 23em;
-    left: 22em;
+#node1 {
+  left: 380px;
+  margin-top: 160px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+
+#node2 {
+  left: 600px;
+  margin-top: 160px;
+  background-color: #E7E4E4;
+  width: 140px;
+}
+#node3 {
+  left: 380px;
+  margin-top: 220px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node4 {
+  left: 600px;
+  margin-top: 220px;
+  background-color: #E7E4E4;
+  width: 140px;
+}
+#node5 {
+  left: 380px;
+  margin-top: 280px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node6 {
+  left: 600px;
+  margin-top: 280px;
+  background-color: #E7E4E4;
+  width: 140px;
+}
+#node7 {
+  left: 380px;
+  margin-top: 340px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node8 {
+  left: 700px;
+  margin-top: 400px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node9 {
+  left: 700px;
+  margin-top: 485px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node10 {
+  left: 700px;
+  margin-top: 570px;
+  background-color: #FAFFAB;
+  width: 100px;
+}
+#node11 {
+  left: 700px;
+  margin-top: 650px;
+  background-color: #E7E4E4;
+  width: 120px;
+}
+#node12 {
+  left: 530px;
+  margin-top: 650px;
+  background-color: #E7E4E4;
+  width: 110px;
+}
+#node13 {
+  left: 225px;
+  margin-top: 400px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node14 {
+  left: 380px;
+  margin-top: 450px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node15 {
+  left: 365px;
+  margin-top: 650px;
+  background-color: #E7E4E4;
+  width: 110px;
+}
+#node16 {
+  left: 80px;
+  margin-top: 450px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node17 {
+  left: 225px;
+  margin-top: 500px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node18 {
+  left: 80px;
+  margin-top: 550px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node19 {
+  left: 225px;
+  margin-top: 600px;
+  background-color: #FAFFAB;
+  width: 110px;
+}
+#node20 {
+  left: 80px;
+  margin-top: 650px;
+  background-color: #E7E4E4;
+  width: 110px;
 }
 
 .flowchart-demo .jtk-connector {
@@ -82,24 +234,16 @@
 }
 
 .flowchart-demo .aLabel {
-    background-color: white;
     padding: 0.4em;
-    font: 12px sans-serif;
+    font: 13px sans-serif;
     color: #444;
     z-index: 21;
-    border: 1px dotted gray;
     opacity: 0.8;
     cursor: pointer;
 }
 
-.flowchart-demo .aLabel.jtk-hover {
-    background-color: #5C96BC;
-    color: white;
-    border: 1px solid white;
-}
-
 .window.jtk-connected {
-    border: 1px solid green;
+    border: 1px solid #eee;
 }
 
 .jtk-drag {

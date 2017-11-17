@@ -6,8 +6,6 @@
   <!-- 引入样式 -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/jsplumbtoolkit-defaults.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/jsplumbtoolkit-demo.css">
   <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
@@ -17,7 +15,7 @@
     </el-menu>
     <el-card class="box-card">
       <el-row :gutter="20">
-        <el-col :span="7" :offset="4">
+        <el-col :span="7" :offset="3">
           <el-card class="box-card" style="margin-bottom:20px">
             <el-col :span="22" :offset="2">
               <span style="line-height: 30px;">请输入三角形的三条边长</span>
@@ -64,10 +62,72 @@
         <el-col :span="12">
           <!-- flowchart -->
           <div class="jtk-demo-canvas canvas-wide flowchart-demo jtk-surface" id="canvas">
-            <div class="window jtk-node" id="flowchartWindow1"><strong>1</strong><br/><br/></div>
+            <!-- <div class="window jtk-node" id="flowchartWindow1"><strong>1</strong><br/><br/></div>
             <div class="window jtk-node" id="flowchartWindow2"><strong>2</strong><br/><br/></div>
             <div class="window jtk-node" id="flowchartWindow3"><strong>3</strong><br/><br/></div>
-            <div class="window jtk-node" id="flowchartWindow4"><strong>4</strong><br/><br/></div>
+            <div class="window jtk-node" id="flowchartWindow4"><strong>4</strong><br/><br/></div> -->
+            <div id="node-input" class="window">输入 a, b, c</div>
+            <div id="node-init" class="window">match = 0</div>
+             <div id="node1" class="window">
+               a = b ?<span class="badge">1</span>
+             </div>
+             <div id="node2" class="window">
+               match=match+1<span class="badge">2</span>
+             </div>
+             <div id="node3" class="window">
+              a=c ?<span class="badge">3</span>
+             </div>
+             <div id="node4" class="window">
+              match=match+2<span class="badge">4</span>
+             </div>
+             <div id="node5" class="window">
+              b=c ?<span class="badge">5</span>
+             </div>
+             <div id="node6" class="window">
+              match=match+3<span class="badge">6</span>
+             </div>
+             <div id="node7" class="window">
+              match=0 ?<span class="badge">7</span>
+             </div>
+             <div id="node8" class="window">
+              a+b<=c ?<span class="badge">8</span>
+             </div>
+             <div id="node9" class="window">
+              b+c<=a ?<span class="badge">9</span>
+             </div>
+             <div id="node10" class="window">
+               a+c<=b ?<span class="badge">10</span>
+             </div>
+             <div id="node11" class="window">
+               不等边三角形<span class="badge">11</span>
+             </div>
+             <div id="node12" class="window">
+               非三角形<span class="badge">12</span>
+             </div>
+             <div id="node13" class="window">
+               match=1 ?<span class="badge">13</span>
+             </div>
+             <div id="node14" class="window">
+               a+b<=c ?<span class="badge">14</span>
+             </div>
+             <div id="node15" class="window">
+               等腰三角形<span class="badge">15</span>
+             </div>
+             <div id="node16" class="window">
+               match=2 ?<span class="badge">16</span>
+             </div>
+             <div id="node17" class="window">
+               a+c<=b ?<span class="badge">17</span>
+             </div>
+             <div id="node18" class="window">
+               match=3 ?<span class="badge">18</span>
+             </div>
+             <div id="node19" class="window">
+               b+c<=a ?<span class="badge">19</span>
+             </div>
+             <div id="node20" class="window">
+               等边三角形<span class="badge">20</span>
+             </div>
           </div>
         </el-col>
       </el-row>
@@ -120,8 +180,5 @@
 <script src="js/jsplumb/base-library-adapter.js"></script>
 <script src="js/jsplumb/dom.jsPlumb.js"></script>
 <!-- /JS -->
-<!--  demo code -->
-<script src="js/jsplumb/demo.js"></script>
-
 <script src="js/test.js"></script>
 </html>
