@@ -84,8 +84,8 @@ body {
   text-align: center;
   white-space: nowrap;
   position: absolute;
-  top: -5px;
-  left: -10px;
+  top: -10px;
+  left: -15px;
 }
 
 #node-input {
