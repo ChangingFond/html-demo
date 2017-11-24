@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chidoudou</title>
+  <style>
+    body {
+      background-color: #e65666;
+    }
+
+    .chidou > div:nth-child(1) {
+      width: 0;
+      height: 0;
+      border-left: 25px solid white;
+      border-bottom: 25px solid white;
+      border-top: 25px solid white;
+      border-right: 25px solid transparent;
+      border-radius: 25px;
+      animation: up 0.5s 0s infinite;
+    }
+    .chidou > div:nth-child(2) {
+      width: 0;
+      height: 0;
+      border-left: 25px solid white;
+      border-bottom: 25px solid white;
+      border-top: 25px solid white;
+      border-right: 25px solid transparent;
+      border-radius: 25px;
+      animation: down 0.5s 0s infinite;
+      margin-top: -50px;
+    }
+    @keyframes up {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      50% {
+        transform: rotateZ(60deg);
+      }
+      100% {
+        transform: rotateZ(0deg);
+      }
+    }
+    @keyframes down {
+      0% {
+        transform: rotateZ(0deg);
+      }
+      50% {
+        transform: rotateZ(-60deg);
+      }
+      100% {
+        transform: rotateZ(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="chidou">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
