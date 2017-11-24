@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loading</title>
+  <style media="screen">
+    body {
+      background-color: #e65666;
+    }
+    .loading > div {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: white;
+      float: left;
+      margin: 5px;
+      /*animation: load 1s 0.12s infinite;*/
+    }
+
+    .loading > div:nth-child(1) {
+      animation: load 1s 0.12s infinite;
+    }
+    .loading > div:nth-child(2) {
+      animation: load 1s 0.24s infinite;
+    }
+    .loading > div:nth-child(3) {
+      animation: load 1s 0.36s infinite;
+    }
+    /*闪烁效果*/
+    @keyframes load {
+      0% {
+        transform: scale(1);  /* 原始大小 */
+      }
+      50% {
+        transform: scale(0.2);  /* 缩小 */
+      }
+      100% {
+        transform: scale(1);  /* 恢复 */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
